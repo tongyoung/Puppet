@@ -1,4 +1,4 @@
 Puppet
 ======
 
-code to practice my puppet code
+code to practice my puppet 
