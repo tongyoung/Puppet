@@ -1,0 +1,12 @@
+[tcpout]
+defaultGroup = default-autolb-group
+
+<% @splunk_indexers.each do |server| -%>
+[tcpout-server://<%= server %>]
+<% end -%>
+
+[tcpout:default-autolb-group]
+disabled = false
+server = <%= @splunk_lb_servers %>
+
+

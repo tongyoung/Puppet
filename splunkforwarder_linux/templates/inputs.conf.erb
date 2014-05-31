@@ -1,0 +1,9 @@
+[default]
+host = <%= @fqdn %>
+
+<% @monitor_folders.each do |folder| -%>
+[monitor://<%= folder %>]
+disabled = false
+
+<% end -%>
+
