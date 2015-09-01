@@ -1,0 +1,12 @@
+# This is a test to create the clients.conf file
+# for radius
+
+<% @hash.each_pair do |hash_key, hash_value| -%>
+client <%= hash_value['subnet'] %> {
+  secret    = <%= hash_value['secret'] %>
+  shortname = <%= hash_value['shortname'] %>
+}
+<% end -%>
+
+
+Done
